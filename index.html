@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="converter-container">
+            <div class="converter-form-wrapper clearfix">
+                <div class="converter-form-field-wrap">
+                    <label for="cur-amount">Amount</label>
+                    <input type="number" id="cur-amount">
+                </div>
+                <div class="converter-form-field-wrap">
+                    <label for="country-cur">From</label>
+                    <div class="country-cur">
+                        <div class="flag-image"></div>
+                        <div class="currency-details">
+                            <span class="currency-cod">USA</span>
+                            <span class="currency-name">Dollar</span>
+                        </div>
+                    </div>
+                    <input list="countries" name="country-cur" id="country-cur" value="Edge" type="hidden">
+                    <datalist id="countries">
+                        <option value="Edge">
+                    </datalist>
+                </div>
+                <i class="fas fa-arrows-alt-h inverse-btn"></i>
+                <div class="converter-form-field-wrap">
+                    <label for="country-cur">To</label>
+                    <div class="country-cur">
+                        <div class="flag-image"></div>
+                        <div class="currency-details">
+                            <span class="currency-cod">USA</span>
+                            <span class="currency-name">Dollar</span>
+                        </div>
+                    </div>
+                    <input list="countries" name="country-cur" id="country-cur" value="Edge" type="hidden">
+                    <datalist id="countries">
+                        <option value="Edge">
+                    </datalist>
+                </div>
+            </div>
+            <div class="converter-result-output">
+                <div class="converter-result-conversion-from">
+                    <span class="from-amount">1</span>
+                    <span>USD</span>
+                    <span><i class="fas fa-equals"></i></span>
+                </div>
+                <div class="converter-result-conversion-to">
+                    <span class="from-amount">2</span>
+                    <span>EUR</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

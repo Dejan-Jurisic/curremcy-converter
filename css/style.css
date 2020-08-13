@@ -1,0 +1,271 @@
+/*** Reset ***/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*** Currency Convertor ***/
+body {
+    background-color: #bee3db;
+}
+
+.converter-container {
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fbe20c;
+    padding: 30px 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.converter-form-wrapper {
+    margin-bottom: 20px;
+}
+
+.converter-form-wrapper input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: #fff;
+    margin-top: 5px;
+    padding-left: 10px;
+
+}
+
+.converter-form-wrapper .country-cur {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: #fff;
+    margin-top: 5px;
+    padding-left: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.converter-form-wrapper label {
+    color: #502e2a;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.converter-form-wrapper input:focus {
+    outline: none;
+    border: 2px solid #007f5f;
+}
+
+.converter-form-wrapper div,
+.converter-form-wrapper .inverse-btn {
+    float: left;
+}
+
+.converter-form-wrapper div {
+    width: 30%;
+}
+
+.converter-form-wrapper .converter-form-field-wrap:nth-child(2) {
+    margin: 0 20px 0 10px
+}
+
+.converter-form-wrapper .inverse-btn {
+    display: block;
+    margin-top: 20px;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.converter-form-wrapper .converter-form-field-wrap:last-child {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.converter-form-wrapper label {
+    display: block;
+    padding-left: 10px;
+}
+
+.converter-form-wrapper .flag-image {
+    background: url('/images/countries-flags/abkhazia.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.currency-details {
+    margin: 4px 0 0 10px;
+}
+
+.currency-cod {
+    float: left;
+}
+
+.currency-name {
+    float: left;
+    clear: left;
+}
+
+.converter-result-output {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.converter-result-conversion-from {
+    font-size: 2.4rem;
+    padding-left: 30px;
+    margin-bottom: 15px
+}
+
+.converter-result-conversion-from span:nth-child(3) {
+    font-size: 2.2rem;
+}
+
+.converter-result-conversion-to {
+    font-size: calc(70.8333px);
+    line-height: calc(70.8333px);
+}
